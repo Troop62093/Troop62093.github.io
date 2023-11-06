@@ -1,100 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8">
-    <title>Troop 62093</title>
-    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-
-        <style>
-            body{
-                color: #3A3637;
-            }
-        
-            h1{
-                background-color: #F3C622;
-                text-align: center;
-                padding: 40px;
-                text-shadow:2px 2px 8px #23212C;
-            }
-            
-            /*.hextop {*/
-            /*    width: 0;*/
-            /*    border-bottom: 30px solid #FCD615;*/
-            /*    border-left: 52px solid transparent;*/
-            /*    border-right: 52px solid transparent;*/
-            /*}*/
-            
-            /*.hexmiddle{*/
-            /*    width: 0;*/
-            /*    border-bottom: 30px solid #FCD615;*/
-            /*    border-left: 52px solid transparent;*/
-            /*    border-right: 52px solid transparent;*/
-                
-            /*    width: 104px;*/
-            /*    height: 5px;*/
-            /*    background-color: #FCD615;*/
-                
-            /*    width: 0;*/
-            /*    border-top: 30px solid #FCD615;*/
-            /*    border-left: 52px solid transparent;*/
-            /*    border-right: 52px solid transparent;*/
-            /*}*/
-            
-            /*.hexbottom{*/
-            /*    width: 0;*/
-            /*    border-top: 30px solid #FCD615;*/
-            /*    border-left: 52px solid transparent;*/
-            /*    border-right: 52px solid transparent;*/
-
-            /*}*/
-            
-            .hex {
-    float: left;
-    margin-left: 3px;
-    margin-bottom: -26px;
-}
-.hex .top {
-    width: 0;
-    border-bottom: 30px solid #6C6;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-}
-.hex .middle {
-    width: 104px;
-    height: 60px;
-    background: #6C6;
-}
-.hex .bottom {
-    width: 0;
-    border-top: 30px solid #6C6;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-}
-.hex-row {
-    clear: left;
-}
-.hex-row.even {
-    margin-left: 53px;
-}
-        </style>
-    </head>
-    <body>
-        <div class="top"></div>
-        <div class="middle"></div>
-        <div class="hexbottom"></div>
-        <div class ="goleft"><div class="hextop"></div>
-        <div class="hexmiddle"></div>
-        <div class="hexbottom"></div></div>
-        
-        <h1>Girl Scout Troop 62093</h1>
-        <p>learn about bees</p>
-        
-        <div class = "tableofcontents">
-            
-            <p><a href="https://www.google.com/search?sca_esv=577922779&rlz=1CAXJDX_enUS1020&q=bee+color+palette&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiSyqar0Z6CAxWIAzQIHRjZBJ4Q0pQJegQICRAB&biw=1536&bih=708&dpr=1.25&safe=active&ssui=on#imgrc=JftJ6AM_U3Y9WM">link text</a>
-</p>
-        </div>
-        
-        
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Troop 62093</title>
+		<link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+		<style>
+			/* Navbar container */
+			.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial;
+			float:right;
+			}
+			/* Links inside the navbar */
+			.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 23px;
+			text-decoration: none;
+			}
+			.navbar a.active {
+			background-color: #04AA6D;
+			color: white;
+			}
+			/* The dropdown container */
+			.dropdown {
+			float: left;
+			overflow: hidden;
+			}
+			/* Dropdown button */
+			.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 23px;
+			background-color: inherit;
+			font-family: inherit; /* Important for vertical align on mobile phones */
+			margin: 0; /* Important for vertical align on mobile phones */
+			}
+			/* Add a red background color to navbar links on hover */
+			.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+			}
+			/* Dropdown content (hidden by default) */
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+			/* Links inside the dropdown */
+			.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			}
+			/* Add a grey background color to dropdown links on hover */
+			.dropdown-content a:hover {
+			background-color: #ddd;
+			}
+			/* Show the dropdown menu on hover */
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
+			div.gallery {
+			border: 1px solid #ccc;
+			}
+			div.gallery:hover {
+			border: 1px solid #777;
+			}
+			div.gallery img {
+			width: 100%;
+			height: auto;
+			}
+			div.desc {
+			padding: 15px;
+			text-align: center;
+			}
+			* {
+			box-sizing: border-box;
+			}
+			.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="#home">    </a>
+			<a href="#home">    </a>
+			<a href="#home">    </a>
+			<a class="active" href="#home">Home</a>
+			<a href="#news">About</a>
+			<div class="dropdown">
+				<button class="dropbtn">Content
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+				<div></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		
+		<h1>TROOP #62093</h1>
+		
+		
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="img_5terre.jpg">
+				<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/butterfly.png" alt="Cinque Terre">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="img_forest.jpg">
+				<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/butterfly.png" alt="Forest">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="img_lights.jpg">
+				<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/butterfly.png" alt="Northern Lights">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="img_mountains.jpg">
+				<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/butterfly.png" alt="Mountains">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			</div>
+		</div>
+	</body>
 </html>
